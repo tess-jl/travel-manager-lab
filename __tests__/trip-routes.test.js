@@ -70,7 +70,7 @@ describe('app routes', () => {
           name: 'maine vacation',
           lat: 44, 
           long: 120,
-          // itineraryItems: [],
+          itineraryItems: [],
           id: expect.any(String),
           __v: 0
         });
@@ -91,7 +91,7 @@ describe('app routes', () => {
           name: 'hawaii vacation',
           lat: 30, 
           long: 200,
-          // itineraryItems: [],
+          itineraryItems: [],
           id: expect.any(String),
           __v: 0
         });
@@ -102,8 +102,7 @@ describe('app routes', () => {
     const maineTrip = await Trip.create({
       name: 'maine vacation',
       lat: 44, 
-      long: 120,
-      events: []
+      long: 120
     });
     return request(app)
       .delete(`/api/v1/trips/${maineTrip._id}`)
