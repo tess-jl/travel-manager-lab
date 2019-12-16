@@ -98,6 +98,24 @@ describe('app routes', () => {
       });
   });
 
-
+  it('deletes a trip by id', async() => {
+    const maineTrip = await Trip.create({
+      name: 'maine vacation',
+      lat: 44, 
+      long: 120,
+      events: []
+    });
+    return request(app)
+      .delete(`/api/v1/trips/${maineTrip._id}`)
+      .then(res => {
+        expect(res.body).toEqual({
+          _id: expect.any(String),
+          name: 'maine vacation',
+          lat: 44, 
+          long: 120,
+          __v: 0
+        });
+      });
+  });
 
 });

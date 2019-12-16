@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576536055774" clover="3.2.0">
-  <project timestamp="1576536055774" name="All files">
-    <metrics statements="49" coveredstatements="37" conditionals="7" coveredconditionals="1" methods="14" coveredmethods="9" elements="70" coveredelements="47" complexity="0" loc="49" ncloc="49" packages="5" files="7" classes="7"/>
+<coverage generated="1576536320434" clover="3.2.0">
+  <project timestamp="1576536320434" name="All files">
+    <metrics statements="52" coveredstatements="40" conditionals="7" coveredconditionals="1" methods="16" coveredmethods="11" elements="75" coveredelements="52" complexity="0" loc="52" ncloc="52" packages="5" files="7" classes="7"/>
     <package name="lib">
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/Users/Tess/alchemy/career-track/week-03/travel-manager-lab/lib/app.js">
@@ -40,9 +40,9 @@
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="ItineraryItem.js" path="/Users/Tess/alchemy/career-track/week-03/travel-manager-lab/lib/models/ItineraryItem.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
       </file>
       <file name="Trip.js" path="/Users/Tess/alchemy/career-track/week-03/travel-manager-lab/lib/models/Trip.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -53,11 +53,12 @@
       </file>
     </package>
     <package name="lib.routes">
-      <metrics statements="11" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6"/>
+      <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="8"/>
       <file name="trip-routes.js" path="/Users/Tess/alchemy/career-track/week-03/travel-manager-lab/lib/routes/trip-routes.js">
-        <metrics statements="11" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="6"/>
+        <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="8"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
@@ -67,6 +68,8 @@
         <line num="23" count="2" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lib.utils">
