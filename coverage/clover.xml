@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576538898636" clover="3.2.0">
-  <project timestamp="1576538898636" name="All files">
+<coverage generated="1576540405613" clover="3.2.0">
+  <project timestamp="1576540405613" name="All files">
     <metrics statements="60" coveredstatements="48" conditionals="7" coveredconditionals="1" methods="20" coveredmethods="15" elements="87" coveredelements="64" complexity="0" loc="60" ncloc="60" packages="5" files="8" classes="8"/>
     <package name="lib">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -43,7 +43,7 @@
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
       </file>
       <file name="Trip.js" path="/Users/Tess/alchemy/career-track/week-03/travel-manager-lab/lib/models/Trip.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
