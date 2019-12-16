@@ -56,6 +56,48 @@ describe('app routes', () => {
       });
   });
 
+  it('gets a trip by id', async() => {
+    const trip = await Trip.create({
+      name: 'maine vacation',
+      lat: 44, 
+      long: 120
+    });
+    return request(app)
+      .get(`/api/v1/trips/${trip._id}`)
+      .then(res => {
+        expect(res.body).toEqual({
+          _id: expect.any(String),
+          name: 'maine vacation',
+          lat: 44, 
+          long: 120,
+          // itineraryItems: [],
+          id: expect.any(String),
+          __v: 0
+        });
+      });
+  });
+
+  it('updates a trip by id', async() => {
+    const hawaiiTrip = await Trip.create({
+      name: 'hawaii vacation',
+      lat: 30, 
+      long: 200
+    });
+    return request(app)
+      .get(`/api/v1/trips/${hawaiiTrip._id}`)
+      .then(res => {
+        expect(res.body).toEqual({
+          _id: expect.any(String),
+          name: 'hawaii vacation',
+          lat: 30, 
+          long: 200,
+          // itineraryItems: [],
+          id: expect.any(String),
+          __v: 0
+        });
+      });
+  });
+
 
 
 });
