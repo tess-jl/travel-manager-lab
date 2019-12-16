@@ -56,4 +56,19 @@ describe('app routes', () => {
       });
   });
 
+
+  it('deletes an itinerary item by id', async() => {
+    return request(app)
+      .delete(`/api/v1/itineraryItems/${ii._id}`)
+      .then(res => {
+        expect(res.body).toEqual({
+          _id: expect.any(String),
+          tripId: JSON.parse(JSON.stringify(trip._id)),
+          dateOfEvent: expect.any(String),
+          notes: 'a good time',
+          __v: 0
+        });
+      });
+  });
+
 });
