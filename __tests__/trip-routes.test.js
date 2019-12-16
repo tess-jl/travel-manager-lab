@@ -17,4 +17,25 @@ describe('app routes', () => {
   afterAll(() => {
     return mongoose.connection.close();
   });
+
+  it('creates a trip', () => {
+    return request(app)
+      .post('/api/v1/trips')
+      .send({
+        name: 'maine vacation',
+        lat: 44, 
+        long: 120
+      })
+      .then(res => {
+        expect(res.body).toEqual({
+          _id: expect.any(String),
+          name: 'maine vacation',
+          lat: 44, 
+          long: 120,
+          __v: 0
+        });
+      });
+  });
+
+
 });
