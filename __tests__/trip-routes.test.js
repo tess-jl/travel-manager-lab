@@ -4,6 +4,7 @@ const request = require('supertest');
 const app = require('../lib/app');
 const connect = require('../lib/utils/connect');
 const mongoose = require('mongoose');
+const Trip = require('../lib/models/Trip');
 
 describe('app routes', () => {
   beforeAll(() => {
@@ -36,6 +37,25 @@ describe('app routes', () => {
         });
       });
   });
+
+  it('gets all trips', async() => {
+    const trips = await Trip.create([
+      { name: 'maine vacation', lat: 44, long: 120 },
+      { name: 'hawaii vacation', lat: 50, long: 200 },
+      { name: 'japan vacation', lat: 40, long: 300 }
+    ]);
+    return request(app)
+      .get('/api/v1/trips')
+      .then(res => {
+        trips.forEach(trip => {
+          expect(res.body).toContainEqual({
+            _id: trip._id.toString(),
+            name: trip.name
+          });
+        });
+      });
+  });
+
 
 
 });
