@@ -30,7 +30,8 @@ describe('app routes', () => {
         tripId: trip._id,
         dateOfEvent: Date.now(),
         notes: 'a good time',
-        location: 'Portland'
+        location: 'Portland', 
+        woeid: 1200404
       });
   });
 
@@ -45,7 +46,8 @@ describe('app routes', () => {
         tripId: trip._id,
         dateOfEvent: Date.now(), 
         notes: 'good trip', 
-        location: 'Portland'
+        location: 'Portland', 
+        woeid: 1200404
       })
       .then(res => {
         expect(res.body).toEqual({
@@ -54,6 +56,7 @@ describe('app routes', () => {
           dateOfEvent: expect.any(String), 
           notes: 'good trip',
           location: 'Portland',
+          woeid: expect.any(Number),
           __v: 0
         });
       });
@@ -70,6 +73,7 @@ describe('app routes', () => {
           dateOfEvent: expect.any(String),
           notes: 'a good time',
           location: 'Portland',
+          woeid: 1200404,
           __v: 0
         });
       });
