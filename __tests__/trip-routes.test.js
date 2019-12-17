@@ -71,7 +71,6 @@ describe('app routes', () => {
           lat: 44, 
           long: 120,
           itineraryItems: [],
-          id: expect.any(String),
           __v: 0
         });
       });
@@ -92,7 +91,6 @@ describe('app routes', () => {
           lat: 30, 
           long: 200,
           itineraryItems: [],
-          id: expect.any(String),
           __v: 0
         });
       });

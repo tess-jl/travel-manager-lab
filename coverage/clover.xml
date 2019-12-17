@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576545410195" clover="3.2.0">
-  <project timestamp="1576545410195" name="All files">
-    <metrics statements="86" coveredstatements="67" conditionals="7" coveredconditionals="1" methods="27" coveredmethods="19" elements="120" coveredelements="87" complexity="0" loc="86" ncloc="86" packages="6" files="11" classes="11"/>
+<coverage generated="1576548755009" clover="3.2.0">
+  <project timestamp="1576548755009" name="All files">
+    <metrics statements="89" coveredstatements="69" conditionals="7" coveredconditionals="1" methods="31" coveredmethods="21" elements="127" coveredelements="91" complexity="0" loc="89" ncloc="89" packages="6" files="11" classes="11"/>
     <package name="lib">
       <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="/Users/Tess/alchemy/career-track/week-03/travel-manager-lab/lib/app.js">
@@ -70,7 +70,7 @@
       </file>
     </package>
     <package name="lib.routes">
-      <metrics statements="22" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="12"/>
+      <metrics statements="25" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="18" coveredmethods="14"/>
       <file name="itinerary-items-routes.js" path="/Users/Tess/alchemy/career-track/week-03/travel-manager-lab/lib/routes/itinerary-items-routes.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
         <line num="1" count="2" type="stmt"/>
@@ -83,7 +83,7 @@
         <line num="18" count="1" type="stmt"/>
       </file>
       <file name="trip-routes.js" path="/Users/Tess/alchemy/career-track/week-03/travel-manager-lab/lib/routes/trip-routes.js">
-        <metrics statements="14" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="8"/>
+        <metrics statements="17" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="14" coveredmethods="10"/>
         <line num="1" count="2" type="stmt"/>
         <line num="2" count="2" type="stmt"/>
         <line num="3" count="2" type="stmt"/>
@@ -93,11 +93,14 @@
         <line num="13" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="20" count="2" type="stmt"/>
-        <line num="23" count="2" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
-        <line num="37" count="1" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
       </file>
     </package>
     <package name="lib.services">
